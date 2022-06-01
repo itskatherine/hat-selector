@@ -14,8 +14,14 @@ const HatGUI = () => {
   const [currentHat, setCurrentHat] = useState("doge.png");
   return (
     <>
-      <Doge currentHat={currentHat}></Doge>
-      <HatList hatList={hatList} setCurrentHat={setCurrentHat}></HatList>
+      <div className="container">
+        <Doge currentHat={currentHat}></Doge>
+        <HatList
+          className="hat-list"
+          hatList={hatList}
+          setCurrentHat={setCurrentHat}
+        ></HatList>
+      </div>
     </>
   );
 };

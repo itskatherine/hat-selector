@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <HatGUI></HatGUI>
+      <main>
+        <HatGUI></HatGUI>
+      </main>
     </div>
   );
 }

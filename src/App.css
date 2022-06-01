@@ -1,9 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 .App {
   text-align: center;
+  background-color: blanchedalmond;
 }
 
 button{
-  margin:10px
+margin-left: 50px;
+margin: 15px;
+background-color: #633f00; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 3em;
+cursor:pointer;
 }
+
+.doge{
+  width:30%px;
+  border: 1px solid burlywood;
+}
+
+h1{
+  font-family: 'Poppins',sans-serif;
+  font-size: 5em;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+h2{
+  font-size: 2em;
+}
+
+header{
+  background-color: rgb(209, 187, 131);
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.doge { grid-area: 1 / 2 / 2 / 3; }
+.hat-list { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 1 / 4 / 2 / 5; }
+
 
 

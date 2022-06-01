@@ -1,10 +1,6 @@
 const Doge = (props) => {
   const { currentHat } = props;
-  return (
-    <div className="doge-space">
-      <img className="doge" src={"imgs/" + currentHat}></img>
-    </div>
-  );
+  return <img alt="doge" className="doge" src={"imgs/" + currentHat}></img>;
 };
 
 export default Doge;
