@@ -1,4 +1,5 @@
 import HatCard from "./HatCard";
+import RandomHat from "./RandomHat";
 
 const HatList = (props) => {
   const { hatList, setCurrentHat } = props;
@@ -14,8 +15,8 @@ const HatList = (props) => {
   });
   return (
     <div className="hat-list">
-      <h2>Hat List</h2>
       {list}
+      <RandomHat setCurrentHat={setCurrentHat} hatList={hatList}></RandomHat>
     </div>
   );
 };

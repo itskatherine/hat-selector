@@ -12,12 +12,16 @@ margin: 15px;
 background-color: #633f00; /* Green */
 border: none;
 color: white;
-padding: 15px 32px;
+padding: 10px 100px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 3em;
+font-size: 2em;
 cursor:pointer;
+}
+.random-hat{
+  margin-left: 10px;
+  background-color: #c7ba00;
 }
 
 .doge{
