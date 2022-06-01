@@ -1,10 +1,16 @@
 import HatCard from "./HatCard";
 
 const HatList = (props) => {
-  const { hatList } = props;
-  console.log(hatList);
+  const { hatList, setCurrentHat } = props;
   const list = hatList.map((hat) => {
-    return <HatCard key={hat.name} name={hat.name} url={hat.url}></HatCard>;
+    return (
+      <HatCard
+        key={hat.name}
+        name={hat.name}
+        url={hat.url}
+        setCurrentHat={setCurrentHat}
+      ></HatCard>
+    );
   });
   return (
     <div className="hat-list">

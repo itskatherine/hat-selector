@@ -1,8 +1,13 @@
 const HatCard = (props) => {
-  const { url, name } = props;
+  const { url, name, setCurrentHat } = props;
+  const handleSetCurrentHat = () => {
+    setCurrentHat(() => {
+      return url;
+    });
+  };
   return (
     <div className="hat">
-      <button>{name}</button>
+      <button onClick={handleSetCurrentHat}>{name}</button>
     </div>
   );
 };
